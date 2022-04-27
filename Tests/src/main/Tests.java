@@ -17,12 +17,14 @@ public class Tests {
 		System.out.println("Pizza de mussarela: " + pizza2.getIngredientes());
 		
 		pizza2.removerIngrediente("Ervilha");
-		System.out.println("Pizza de mussarela: " + pizza1.getIngredientes());
+		System.out.println("Pizza de mussarela: " + pizza2.getIngredientes());
 		
 		carrinho.adicionarItem(pizza1);
 		carrinho.adicionarItem(pizza2);
 		System.out.println(carrinho.getTotalPizzas());
 		System.out.println(carrinho.getTotalPagar());
+		
+		System.out.println(pizza2.getNumPizzas());
 	}
 	
 	

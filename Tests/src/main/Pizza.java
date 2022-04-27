@@ -8,13 +8,14 @@ public class Pizza {
 	
 	private float preco = 0;
 	
-	private static int numPizzzas = 0;
+	private static int numPizzas = 0;
 	
 	private ArrayList<String> ingredientes = new ArrayList<String>();
 	
 	public Pizza(String sabor, float preco) {
 		this.sabor = sabor;
 		this.preco = preco;
+		numPizzas++;
 	}
 	
 	public int getTotalIngredientes() {
@@ -51,12 +52,12 @@ public class Pizza {
 		this.preco = preco;
 	}
 
-	public int getNum_pizzzas() {
-		return numPizzzas;
+	public int getNumPizzas() {
+		return numPizzas;
 	}
 
-	public void setNumPizzzas(int num) {
-		numPizzzas = num;
+	public void setNumPizzas(int num) {
+		numPizzas = num;
 	}
 
 	public ArrayList<String> getIngredientes() {
